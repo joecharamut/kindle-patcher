@@ -1,0 +1,14 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.1.0"
+    id "java"
+}
+
+group "rocks.spaghetti"
+version "0.0.1"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
