@@ -15,4 +15,33 @@ dependencies {
     compileOnly fileTree("$rootDir/vendor").matching {
         include "**/*.jar"
     }
+
+    // actual libs to build in
+    implementation "com.electronwill.night-config:toml:3.6.5"
+    implementation "blue.endless:jankson:1.2.1"
+
+    implementation "org.ow2.asm:asm:9.2"
+    implementation "org.ow2.asm:asm-util:9.2"
+    implementation "org.ow2.asm:asm-tree:9.2"
+
+    implementation "org.javassist:javassist:3.28.0-GA"
+}
+
+jar.enabled = false
+build.dependsOn(shadowJar)
+shadowJar {
+    archiveClassifier = null
+    manifest {
+        attributes(
+                "Bundle-Activator": "rocks.spaghetti.classloader.bootstrap.BundleEntrypoint",
+                "Bundle-Name": "KindlePatcher",
+                "Bundle-Description": "Patching classloader for kindle",
+                "Bundle-SymbolicName": "rocks.spaghetti.classloader",
+                "Bundle-Version": rootProject.version,
+                "Bundle-Vendor": "Joe",
+                "Bundle-Category": "framework",
+                "Import-Package": "org.osgi.framework",
+                "Export-Package": "rocks.spaghetti.classloader",
+        )
+    }
 }
