@@ -11,4 +11,8 @@ repositories {
 }
 
 dependencies {
+    // include vendor libs
+    compileOnly fileTree("$rootDir/vendor").matching {
+        include "**/*.jar"
+    }
 }
