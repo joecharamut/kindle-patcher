@@ -1,4 +1,4 @@
-package classloader.bootstrap;
+package rocks.spaghetti.classloader.bootstrap;
 
 import rocks.spaghetti.classloader.patch.CompiledPatch;
 import sun.misc.Resource;

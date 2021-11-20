@@ -1,4 +1,4 @@
-package classloader.patch;
+package rocks.spaghetti.classloader.patch;
 
 import org.objectweb.asm.*;
 import org.objectweb.asm.tree.*;

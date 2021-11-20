@@ -1,4 +1,4 @@
-package classloader;
+package rocks.spaghetti.classloader;
 
 import com.electronwill.nightconfig.core.conversion.ObjectConverter;
 import com.electronwill.nightconfig.core.file.FileConfig;

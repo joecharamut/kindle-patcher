@@ -1,4 +1,4 @@
-package classloader.bootstrap;
+package rocks.spaghetti.classloader.bootstrap;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

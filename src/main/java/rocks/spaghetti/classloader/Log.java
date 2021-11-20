@@ -1,4 +1,4 @@
-package classloader;
+package rocks.spaghetti.classloader;
 
 import java.io.*;
 import java.nio.file.Files;

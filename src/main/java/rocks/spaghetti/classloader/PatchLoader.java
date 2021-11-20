@@ -1,4 +1,4 @@
-package classloader;
+package rocks.spaghetti.classloader;
 
 import blue.endless.jankson.Jankson;
 import blue.endless.jankson.api.SyntaxError;

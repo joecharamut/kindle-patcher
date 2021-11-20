@@ -1,4 +1,4 @@
-package classloader;
+package rocks.spaghetti.classloader;
 
 public class Util {
     public static String classToQualified(String classFileName) {

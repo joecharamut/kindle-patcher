@@ -1,4 +1,4 @@
-package classloader.patch;
+package rocks.spaghetti.classloader.patch;
 
 public class PatchCompileException extends RuntimeException {
     public PatchCompileException(String message) {

@@ -1,4 +1,4 @@
-package classloader;
+package rocks.spaghetti.classloader;
 
 import rocks.spaghetti.classloader.patch.CompiledPatch;
 
